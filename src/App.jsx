@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import regianePhoto from "../regiane.jpg";
 import { audiences, methodSteps, services } from "./site-data.js";
+import Reviews, { ReputationLink } from "./Reviews.jsx";
 import { useSiteMotion } from "./useSiteMotion.js";
 
 const whatsappNumber = "5535991442912";
@@ -75,6 +76,7 @@ function Header() {
           <a href="#sobre">Sobre</a>
           <a href="#atuacao">Atuação</a>
           <a href="#metodo">Método</a>
+          <a href="#avaliacoes">Avaliações</a>
           <a href="#local">Local</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -109,11 +111,14 @@ function Header() {
           <a href="#metodo" onClick={closeMenu}>
             <em>03</em> Método
           </a>
+          <a href="#avaliacoes" onClick={closeMenu}>
+            <em>04</em> Avaliações
+          </a>
           <a href="#local" onClick={closeMenu}>
-            <em>04</em> Local
+            <em>05</em> Local
           </a>
           <a href="#contato" onClick={closeMenu}>
-            <em>05</em> Contato
+            <em>06</em> Contato
           </a>
         </nav>
         <div className="menu__foot">
@@ -142,6 +147,7 @@ function Hero() {
             produzem efeitos por muitos anos. Cada etapa merece análise, clareza e
             prevenção — antes da assinatura.
           </p>
+          <div className="hero__conversion">
           <div className="hero__actions">
             <a className="btn btn--primary" href="#contato">
               <span className="btn__label">Apresentar meu caso</span>
@@ -152,6 +158,8 @@ function Hero() {
             <a className="btn btn--ghost" href="#atuacao">
               <span className="btn__label">Áreas de atuação</span>
             </a>
+          </div>
+          <ReputationLink />
           </div>
         </div>
       </div>
@@ -540,7 +548,7 @@ function Location() {
   return (
     <section className="location" id="local">
       <div className="section-head section-head--light">
-        <span className="section-head__index">05</span>
+        <span className="section-head__index">06</span>
         <span className="section-head__label">Localização</span>
       </div>
       <div className="location__grid">
@@ -639,6 +647,7 @@ function Footer() {
           <a href="#sobre">Sobre</a>
           <a href="#atuacao">Atuação</a>
           <a href="#metodo">Método</a>
+          <a href="#avaliacoes">Avaliações</a>
           <a href="#local">Localização</a>
           <a href="#contato">Contato</a>
         </div>
@@ -701,6 +710,7 @@ export default function App() {
         <Services />
         <Method />
         <Audience />
+        <Reviews />
         <Contact />
         <Location />
       </main>

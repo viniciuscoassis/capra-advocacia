@@ -59,3 +59,12 @@ O build gera `dist/index.html` e `dist/privacidade.html`. O repositório Git ind
 - Desktop: o hero usa a altura visível como mínimo e reduz a tipografia em telas baixas.
 - Mobile: o hero usa altura natural, sem cortar conteúdo.
 - As demais seções crescem conforme o conteúdo; não há altura fixa de viewport.
+
+## Avaliações do Google
+
+- `src/google-reviews.js` guarda seis relatos públicos, a nota e o total conferidos em 03/10/2026. É uma seleção manual, sem atualização automática.
+- Para atualizar, conferir o mesmo perfil no Google Maps e alterar nota, total e data juntos. Preservar autoria e redação dos relatos; os temas dos cartões são títulos editoriais.
+- `src/Reviews.jsx` apresenta o resumo na abertura e a seção antes do contato. Os relatos longos podem ser expandidos; no celular, três cartões adicionais ficam no botão “Mostrar mais avaliações”.
+- As datas relativas de publicação ficam apenas nas notas de origem, pois não permitem inferir datas exatas. A data de conferência é exibida na seção.
+
+Os cartões usam os avatares públicos de Larissa, Fernanda e Julia, guardados localmente em `src/assets/reviewers/`. Os demais autores usam iniciais, como no avatar padrão do Google. As imagens foram conferidas no mesmo perfil em 03/10/2026; o avatar da Julia é uma foto de um animal.

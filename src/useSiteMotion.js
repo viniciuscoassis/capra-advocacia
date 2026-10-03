@@ -211,6 +211,10 @@ export function useSiteMotion(scope) {
 
       const onLoad = () => ScrollTrigger.refresh();
       window.addEventListener("load", onLoad);
+      // Expanded reviews move the contact section and its scroll animations.
+      const reviews = scope.current?.querySelector(".reviews");
+      const reviewsObserver = new ResizeObserver(() => ScrollTrigger.refresh(true));
+      if (reviews) reviewsObserver.observe(reviews);
       const safetyTimer = window.setTimeout(() => {
         if (document.hidden && preloader) {
           gsap.set(preloader, { display: "none" });
@@ -221,6 +225,7 @@ export function useSiteMotion(scope) {
 
       return () => {
         window.removeEventListener("load", onLoad);
+        reviewsObserver.disconnect();
         window.clearTimeout(safetyTimer);
         splits.reverse().forEach((split) => split.revert());
         document.documentElement.classList.remove("has-gsap");
