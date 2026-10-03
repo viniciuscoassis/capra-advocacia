@@ -1,0 +1,5 @@
+Tool: built-in image_gen (edit with transparent_background=true).
+Source: WhatsApp Image 2026-08-28 at 12.53.07.jpeg
+Output: capra-advocacia-logo.png (1472 × 1068, alpha transparency).
+
+Use case: background-extraction. Asset type: polished law firm website logo, transparent PNG. Edit target: attached Capra Advocacia logo. Faithfully restore this exact logo at high resolution with crisp smooth edges and clean solid fills. Preserve the precise CA monogram silhouette, the black curved C and sweeping lower black A stroke, cyan blue upper A, proportions, composition, and handwritten signature underneath. Text exactly: "Capra Advocacia". Keep the original signature handwriting, do not replace with typeset lettering. Remove the light gray background entirely to real alpha transparency, also inside the letters. Logo fills black and original vivid cyan. Center with small even transparent margins, tightly framed, approximately original 171:124 aspect ratio. No redesign, no shadows, no gradients, no mockup, no additional symbols or text. Output only the restored logo.

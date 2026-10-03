@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import regianePhoto from "../regiane.jpg";
+import capraLogo from "./assets/capra-advocacia-logo.png";
 import { audiences, methodSteps, services } from "./site-data.js";
 import Reviews, { ReputationLink } from "./Reviews.jsx";
 import { useSiteMotion } from "./useSiteMotion.js";
@@ -66,11 +67,7 @@ function Header() {
     <>
       <header className={`header${scrolled ? " is-scrolled" : ""}`}>
         <a className="header__logo" href="#top" aria-label="Capra Advocacia — início">
-          <span className="header__logo-mark">CA</span>
-          <span className="header__logo-lockup">
-            <span className="header__logo-text">Capra&nbsp;Advocacia</span>
-            <small>Regiane Capra</small>
-          </span>
+          <img className="header__logo-image" src={capraLogo} alt="Capra Advocacia" width="1472" height="1068" />
         </a>
         <nav className="header__nav" aria-label="Navegação principal">
           <a href="#sobre">Sobre</a>
@@ -123,7 +120,7 @@ function Header() {
         </nav>
         <div className="menu__foot">
           <span>Poços de Caldas — MG</span>
-          <span>OAB/MG 114.383</span>
+          <span>OAB/MG 114.383 · CRECI-MG 52.866</span>
         </div>
       </div>
     </>
@@ -136,7 +133,7 @@ function Hero() {
       <div className="hero__inner">
         <p className="hero__eyebrow reveal-line">
           <span className="hero__eyebrow-dot" />
-          Regiane Capra &nbsp;·&nbsp; OAB/MG 114.383 &nbsp;·&nbsp; Advocacia Imobiliária
+          Regiane Capra &nbsp;·&nbsp; OAB/MG 114.383 &nbsp;·&nbsp; CRECI-MG 52.866
         </p>
         <h1 className="hero__title" data-split>
           Segurança jurídica para suas decisões <em>imobiliárias</em>
@@ -260,8 +257,8 @@ function About() {
               <span className="badge-card__v">114.383</span>
             </div>
             <div className="badge-card">
-              <span className="badge-card__k">Base</span>
-              <span className="badge-card__v">Poços de Caldas</span>
+              <span className="badge-card__k">CRECI-MG</span>
+              <span className="badge-card__v">52.866</span>
             </div>
           </div>
         </div>
@@ -271,9 +268,9 @@ function About() {
           </h2>
           <p className="about__text" data-split-lines>
             Regiane Capra é advogada inscrita na OAB/MG sob o número 114.383 e
-            corretora de imóveis, com atuação voltada à segurança jurídica das
-            negociações imobiliárias. Integra a equipe da Capra Advocacia, em Poços de
-            Caldas–MG.
+            corretora de imóveis inscrita no CRECI-MG sob o número 52.866, com atuação
+            voltada à segurança jurídica das negociações imobiliárias. Integra a equipe
+            da Capra Advocacia, em Poços de Caldas–MG.
           </p>
           <p className="about__text" data-split-lines>
             Seu trabalho traduz questões jurídicas complexas em orientações claras:
@@ -489,16 +486,6 @@ function LeadForm() {
           required
         />
       </label>
-      <label className="lead-form__consent">
-        <input type="checkbox" name="consentimento" required />
-        <span>
-          Autorizo o contato para retorno sobre esta solicitação e declaro que li o{" "}
-          <a href="/privacidade.html" target="_blank" rel="noopener noreferrer">
-            Aviso de Privacidade
-          </a>
-          .
-        </span>
-      </label>
       <button className="btn btn--form" type="submit">
         <span className="btn__label">Continuar no WhatsApp</span>
         <span className="btn__arrow" aria-hidden="true">
@@ -635,9 +622,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__brand">
-          <span className="footer__logo">Capra Advocacia</span>
+          <a className="footer__logo" href="#top" aria-label="Capra Advocacia — início">
+            <img src={capraLogo} alt="Capra Advocacia" width="1472" height="1068" loading="lazy" />
+          </a>
           <p>
-            Regiane Capra · OAB/MG 114.383
+            Regiane Capra · OAB/MG 114.383 · CRECI-MG 52.866
             <br />
             Advocacia Imobiliária · Poços de Caldas — Minas Gerais
           </p>
@@ -680,7 +669,10 @@ function Footer() {
         </div>
       </div>
       <div className="footer__bottom">
-        <span>© {new Date().getFullYear()} Regiane Capra — OAB/MG 114.383</span>
+        <span>
+          © {new Date().getFullYear()} Regiane Capra — OAB/MG 114.383 · CRECI-MG
+          52.866
+        </span>
         <span>Conteúdo informativo, em conformidade com o Código de Ética da OAB.</span>
       </div>
     </footer>

@@ -4,17 +4,17 @@
 
 ## Arquitetura da marca
 
-Usar **Capra Advocacia** como marca institucional e **Regiane Capra** como assinatura de autoridade, desde que `Capra Advocacia` seja o nome regularmente registrado e autorizado para divulgação perante a OAB.
+Usar **Capra Advocacia** como marca institucional e **Regiane Capra** como assinatura de autoridade, conforme decisão confirmada em 2026-08-28.
 
 Lockup recomendado:
 
 > Capra Advocacia  
-> Regiane Capra · OAB/MG 114.383
+> Regiane Capra · OAB/MG 114.383 · CRECI-MG 52.866
 
 Se `Capra Advocacia` não for uma sociedade registrada ou se a titularidade ainda não estiver definida, inverter provisoriamente:
 
 > Regiane Capra  
-> Advocacia Imobiliária · OAB/MG 114.383
+> Advocacia Imobiliária · OAB/MG 114.383 · CRECI-MG 52.866
 
 Não criar nomes, qualificações ou especialidades que não possam ser comprovados.
 

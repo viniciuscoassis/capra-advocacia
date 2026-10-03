@@ -1,9 +1,11 @@
+import capraLogo from "./assets/capra-advocacia-logo.png";
+
 export default function PrivacyApp() {
   return (
     <>
       <header className="legal-header">
         <a className="legal-header__brand" href="/">
-          Capra Advocacia
+          <img className="header__logo-image" src={capraLogo} alt="Capra Advocacia — início" width="1472" height="1068" />
         </a>
         <a className="legal-header__back" href="/#contato">
           Voltar ao site
@@ -22,8 +24,8 @@ export default function PrivacyApp() {
           <h2>Responsável pelo tratamento</h2>
           <p>
             Capra Advocacia, com atendimento profissional de Regiane Capra, OAB/MG
-            114.383, na Av. João Pinheiro, 137, sala 01, Centro, Poços de Caldas–MG,
-            CEP 37701-387.
+            114.383 e CRECI-MG 52.866, na Av. João Pinheiro, 137, sala 01, Centro,
+            Poços de Caldas–MG, CEP 37701-387.
           </p>
         </section>
 

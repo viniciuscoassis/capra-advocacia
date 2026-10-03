@@ -31,17 +31,18 @@ Abrir `http://localhost:4174`.
 ## Dados confirmados em 2026-08-28
 
 - Marca de lançamento: `Capra Advocacia`, com Regiane Capra como autoridade visível.
+- Registros profissionais: `OAB/MG 114.383` e `CRECI-MG 52.866`.
 - WhatsApp e telefone: `+55 35 99144-2912`.
 - E-mail: `re.capra@hotmail.com`.
 - Endereço: Av. João Pinheiro, 137, sala 01, Centro, Poços de Caldas–MG, CEP 37701-387.
 
 ## Configurações ainda pendentes
 
-- CRECI da Regiane.
 - Abrangência do atendimento online.
 - Revisão do aviso de privacidade pela Regiane antes da publicação.
 - Domínio e hospedagem públicos.
 - Identificadores do Google Tag Manager/Google Ads.
+- A mensuração será conectada à conta Google Ads já utilizada pela Regiane, preservando a titularidade dela.
 
 O formulário não envia dados a um servidor. Ele monta uma mensagem no dispositivo do visitante e abre o WhatsApp. Os eventos `generate_lead` ficam disponíveis no `dataLayer` para conexão futura com a mensuração.
 

@@ -1,14 +1,16 @@
 # Plano Inicial de Google Ads — Capra Advocacia / Regiane Capra
 
-**Versão:** 2026-08-25  
+**Versão:** 2026-08-28  
 **Objetivo:** validar demanda qualificada por advocacia imobiliária com um caminho simples entre pesquisa, página, WhatsApp e triagem.
 
 ## Decisão de marca e conta
 
+**Decisão confirmada em 2026-08-28:** usar a conta Google Ads já existente da Regiane para acelerar o lançamento, mantendo a titularidade, o faturamento e a verificação sob controle dela. A Evo recebe acesso administrativo ou vínculo pela MCC quando necessário, sem receber senha.
+
 Se `Capra Advocacia` for uma sociedade regularmente registrada e a operação pertencer ao escritório:
 
 - Conta do Google Ads, Perfil da Empresa, domínio e faturamento em nome da **Capra Advocacia**.
-- Regiane aparece nos anúncios e na página como profissional responsável, com `OAB/MG 114.383`.
+- Regiane aparece nos anúncios e na página como profissional responsável, com `OAB/MG 114.383` e `CRECI-MG 52.866` quando a comunicação mencionar sua atuação como corretora.
 - A Evo acessa a conta do Google Ads pela MCC, sem receber senha ou titularidade.
 
 Se a sociedade ou a titularidade não estiver confirmada:
