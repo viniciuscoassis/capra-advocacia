@@ -242,6 +242,10 @@ function About() {
               <img
                 className="about__photo"
                 src={regianePhoto}
+                width="752"
+                height="1424"
+                loading="lazy"
+                decoding="async"
                 alt="Regiane Capra, advogada e corretora de imóveis, em seu escritório"
                 onError={() => setPhotoVisible(false)}
               />

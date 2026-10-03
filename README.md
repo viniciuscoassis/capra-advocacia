@@ -40,7 +40,7 @@ Abrir `http://localhost:4174`.
 
 - Abrangência do atendimento online.
 - Revisão do aviso de privacidade pela Regiane antes da publicação.
-- Domínio e hospedagem públicos.
+- Domínio próprio, se desejado. Endereço público atual: `https://capra-advocacia.vercel.app/`.
 - Identificadores do Google Tag Manager/Google Ads.
 - A mensuração será conectada à conta Google Ads já utilizada pela Regiane, preservando a titularidade dela.
 
@@ -69,3 +69,13 @@ O build gera `dist/index.html` e `dist/privacidade.html`. O repositório Git ind
 - As datas relativas de publicação ficam apenas nas notas de origem, pois não permitem inferir datas exatas. A data de conferência é exibida na seção.
 
 Os cartões usam os avatares públicos de Larissa, Fernanda e Julia, guardados localmente em `src/assets/reviewers/`. Os demais autores usam iniciais, como no avatar padrão do Google. As imagens foram conferidas no mesmo perfil em 03/10/2026; o avatar da Julia é uma foto de um animal.
+
+## SEO e compartilhamento
+
+- Ícones da marca: `public/favicon.ico`, `public/favicon-96.png` e `public/apple-touch-icon.png`.
+- Capa de compartilhamento: `public/social-preview.png` (1200 × 630), com a foto e a identidade reais.
+- `scripts/seo.mjs` insere os metadados Open Graph, Twitter Cards e os dados estruturados `LegalService` diretamente no HTML, antes da execução do React.
+- A URL atual está definida em `.env.production`. Ao trocar de domínio, atualize `VITE_SITE_URL` nesse arquivo e no ambiente de build, caso a hospedagem tenha uma variável própria. Para desenvolvimento, use `.env.local`, conforme `.env.example`. Isso habilita canonical, `og:url`, imagens com URL absoluta e `sitemap.xml`; `robots.txt` é gerado em todos os builds.
+- Sem domínio configurado, o build avisa e não inventa uma URL oficial. A imagem usa caminho relativo até essa configuração.
+- A prévia real do WhatsApp depende do site publicado e acessível ao serviço; alterações podem demorar a aparecer por cache.
+- As avaliações próprias não são incluídas como `aggregateRating` nos dados estruturados do escritório.
