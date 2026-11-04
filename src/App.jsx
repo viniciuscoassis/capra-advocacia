@@ -18,11 +18,19 @@ const mapEmbedUrl =
   "https://www.google.com/maps?q=Av.%20Jo%C3%A3o%20Pinheiro%2C%20137%20-%20Centro%2C%20Po%C3%A7os%20de%20Caldas%20-%20MG%2C%2037701-387&output=embed";
 
 function pushLeadEvent(channel, service = "") {
+  const parameters = {
+    lead_channel: channel,
+    ...(service ? { lead_service: service } : {}),
+  };
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "generate_lead", parameters);
+  }
+
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
     event: "generate_lead",
-    lead_channel: channel,
-    lead_service: service,
+    ...parameters,
   });
 }
 

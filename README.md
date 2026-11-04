@@ -44,7 +44,7 @@ Abrir `http://localhost:4174`.
 - Identificadores do Google Tag Manager/Google Ads.
 - A mensuração será conectada à conta Google Ads já utilizada pela Regiane, preservando a titularidade dela.
 
-O formulário não envia dados a um servidor. Ele monta uma mensagem no dispositivo do visitante e abre o WhatsApp. Os eventos `generate_lead` ficam disponíveis no `dataLayer` para conexão futura com a mensuração.
+O formulário não envia dados a um servidor. Ele monta uma mensagem no dispositivo do visitante e abre o WhatsApp. Cliques nos links e no formulário que abrem o WhatsApp enviam `generate_lead` ao GA4, com `lead_channel` e, quando aplicável, `lead_service`; o evento também é disponibilizado no `dataLayer`. Essa conversão representa intenção de contato, não confirmação de mensagem enviada.
 
 ## Build de produção
 
