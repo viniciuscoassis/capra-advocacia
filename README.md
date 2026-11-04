@@ -73,7 +73,7 @@ Os cartões usam os avatares públicos de Larissa, Fernanda e Julia, guardados l
 ## SEO e compartilhamento
 
 - Ícones da marca: `public/favicon.ico`, `public/favicon-96.png` e `public/apple-touch-icon.png`.
-- Capa de compartilhamento: `public/social-preview.png` (1200 × 630), com a foto e a identidade reais.
+- Capas de compartilhamento: `public/social-preview.png` (1200 × 630, horizontal) e `public/social-preview-square.png` (1200 × 1200, quadrada), com a foto e a identidade reais.
 - `scripts/seo.mjs` insere os metadados Open Graph, Twitter Cards e os dados estruturados `LegalService` diretamente no HTML, antes da execução do React.
 - A URL atual está definida em `.env.production`. Ao trocar de domínio, atualize `VITE_SITE_URL` nesse arquivo e no ambiente de build, caso a hospedagem tenha uma variável própria. Para desenvolvimento, use `.env.local`, conforme `.env.example`. Isso habilita canonical, `og:url`, imagens com URL absoluta e `sitemap.xml`; `robots.txt` é gerado em todos os builds.
 - Sem domínio configurado, o build avisa e não inventa uma URL oficial. A imagem usa caminho relativo até essa configuração.
